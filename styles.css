@@ -3,7 +3,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    font-family:"Roboto", sans-serif;
+    font-family:"Lexend", sans-serif;
 }
 
 .background-picture {
@@ -11,7 +11,7 @@ body {
     background-size:cover;
     background-position: center;
 
-    width:70vw;
+    width:60vw;
     height:100vh;
 
     text-align:center;
@@ -26,12 +26,19 @@ body {
     display:flex;
 }
 
+.form-container {
+    display:flex;
+    flex-direction:column;
+}
+
 .title-text, .form, .submission-container {
     padding: 0px 70px;
     padding-right:250px;
 }
 
 .title-text {
+    background-color:#f7f7f7;
+
     font-size:25px;
     font-weight:600;
 
@@ -72,4 +79,39 @@ body {
 
 input, label, button, textarea {
     font-family: inherit;
+}
+
+input {
+    border: 2px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+.submission-container {
+    margin-top:auto;
+    flex: 1;
+    background-color: #f7f7f7;
+    
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.submission-container button {
+    padding: 10px 50px;
+
+    background-color: #91763e;
+    color:white;
+
+    border-radius:10px;
+    border: 0px;
+
+    font-size: 18px;
+}
+
+input:invalid {
+    border: 2px solid #ff0000;
+}
+
+input:focus {
+    border: 2px solid #2884fc;
+    outline:none;
 }
